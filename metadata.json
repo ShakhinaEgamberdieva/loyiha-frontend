@@ -1,0 +1,5 @@
+{
+  "name": "Student Management System",
+  "description": "A comprehensive dashboard for managing students, reports, and academic data using Next.js App Router.",
+  "requestFramePermissions": []
+}
