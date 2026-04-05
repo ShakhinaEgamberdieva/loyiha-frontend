@@ -104,21 +104,21 @@ export const groupsData: GroupStat[] = [
 ];
 
 export const studentsData: Student[] = [
-  { id: '1', name: 'Alex Johnson', group: 'CS-301', gpa: 3.95, attendance: 98, email: 'alex.j@edu.com' },
-  { id: '2', name: 'Sarah Williams', group: 'CS-301', gpa: 3.88, attendance: 95, email: 'sarah.w@edu.com' },
-  { id: '3', name: 'Michael Brown', group: 'CS-201', gpa: 3.82, attendance: 92, email: 'michael.b@edu.com' },
-  { id: '4', name: 'Emily Davis', group: 'ENG-101', gpa: 3.79, attendance: 97, email: 'emily.d@edu.com' },
-  { id: '5', name: 'David Wilson', group: 'CS-101', gpa: 3.75, attendance: 90, email: 'david.w@edu.com' },
-  { id: '6', name: 'Jessica Martinez', group: 'MATH-301', gpa: 3.71, attendance: 94, email: 'jessica.m@edu.com' },
-  { id: '7', name: 'James Anderson', group: 'PHYS-301', gpa: 3.68, attendance: 89, email: 'james.a@edu.com' },
-  { id: '8', name: 'Jennifer Taylor', group: 'CS-302', gpa: 3.65, attendance: 93, email: 'jennifer.t@edu.com' },
-  { id: '9', name: 'Robert Thomas', group: 'CS-201', gpa: 3.62, attendance: 88, email: 'robert.t@edu.com' },
-  { id: '10', name: 'Lisa Garcia', group: 'ENG-201', gpa: 3.58, attendance: 91, email: 'lisa.g@edu.com' },
-  { id: '11', name: 'Daniel Lee', group: 'CS-102', gpa: 1.85, attendance: 62, email: 'daniel.l@edu.com' },
-  { id: '12', name: 'Amanda White', group: 'MATH-201', gpa: 1.92, attendance: 58, email: 'amanda.w@edu.com' },
-  { id: '13', name: 'Christopher Harris', group: 'PHYS-201', gpa: 1.78, attendance: 55, email: 'chris.h@edu.com' },
-  { id: '14', name: 'Michelle Clark', group: 'CS-202', gpa: 1.95, attendance: 64, email: 'michelle.c@edu.com' },
-  { id: '15', name: 'Matthew Lewis', group: 'CS-102', gpa: 1.82, attendance: 60, email: 'matthew.l@edu.com' },
+  { id: '1', name: 'Abdulloh Karimov', group: 'CS-301', gpa: 3.95, attendance: 98, email: 'abdulloh.k@edu.uz' },
+  { id: '2', name: 'Nilufar Rahimova', group: 'CS-301', gpa: 3.88, attendance: 95, email: 'nilufar.r@edu.uz' },
+  { id: '3', name: 'Sardorbek Toshmatov', group: 'CS-201', gpa: 3.82, attendance: 92, email: 'sardorbek.t@edu.uz' },
+  { id: '4', name: 'Madina Usmonova', group: 'ENG-101', gpa: 3.79, attendance: 97, email: 'madina.u@edu.uz' },
+  { id: '5', name: 'Jasurbek Aliyev', group: 'CS-101', gpa: 3.75, attendance: 90, email: 'jasurbek.a@edu.uz' },
+  { id: '6', name: 'Gulnoza Azimova', group: 'MATH-301', gpa: 3.71, attendance: 94, email: 'gulnoza.a@edu.uz' },
+  { id: '7', name: 'Sherzod Ergashev', group: 'PHYS-301', gpa: 3.68, attendance: 89, email: 'sherzod.e@edu.uz' },
+  { id: '8', name: 'Zarina Xolmatova', group: 'CS-302', gpa: 3.65, attendance: 93, email: 'zarina.x@edu.uz' },
+  { id: '9', name: 'Bobur Mirzayev', group: 'CS-201', gpa: 3.62, attendance: 88, email: 'bobur.m@edu.uz' },
+  { id: '10', name: 'Laylo Nematova', group: 'ENG-201', gpa: 3.58, attendance: 91, email: 'laylo.n@edu.uz' },
+  { id: '11', name: 'Sanjar Qodirov', group: 'CS-102', gpa: 1.85, attendance: 62, email: 'sanjar.q@edu.uz' },
+  { id: '12', name: 'Yulduz Isoqova', group: 'MATH-201', gpa: 1.92, attendance: 58, email: 'yulduz.i@edu.uz' },
+  { id: '13', name: 'Temur Boymatov', group: 'PHYS-201', gpa: 1.78, attendance: 55, email: 'temur.b@edu.uz' },
+  { id: '14', name: 'Barno Abdullayeva', group: 'CS-202', gpa: 1.95, attendance: 64, email: 'barno.a@edu.uz' },
+  { id: '15', name: 'Diyor Xasanov', group: 'CS-102', gpa: 1.82, attendance: 60, email: 'diyor.x@edu.uz' },
 ];
 
 export const gradeDistributionData: GradeDistribution[] = [
@@ -162,14 +162,14 @@ export const attendanceCorrelationData: AttendanceCorrelation[] = [
 ];
 
 export const activityData: Activity[] = [
-  { id: '1', studentName: 'Alex Johnson', action: 'Сдал экзамен по CS-301 на 98%', time: '5 мин назад', type: 'success', icon: 'check' },
-  { id: '2', studentName: 'Daniel Lee', action: 'Пропустил лекцию по CS-102', time: '15 мин назад', type: 'warning', icon: 'alert' },
-  { id: '3', studentName: 'Sarah Williams', action: 'Завершил лабораторную работу', time: '32 мин назад', type: 'success', icon: 'check' },
-  { id: '4', studentName: 'Christopher Harris', action: 'Низкая посещаемость (<60%)', time: '1 час назад', type: 'warning', icon: 'alert' },
-  { id: '5', studentName: 'Emily Davis', action: 'Получил грант за успеваемость', time: '2 часа назад', type: 'success', icon: 'star' },
-  { id: '6', studentName: 'Michael Brown', action: 'Зарегистрировался на курс CS-301', time: '3 часа назад', type: 'info', icon: 'info' },
-  { id: '7', studentName: 'Jessica Martinez', action: 'Сдал курсовую работу', time: '4 часа назад', type: 'success', icon: 'check' },
-  { id: '8', studentName: 'Amanda White', action: 'Не сдал домашнее задание', time: '5 часов назад', type: 'warning', icon: 'alert' },
+  { id: '1', studentName: 'Abdulloh Karimov', action: 'Сдал экзамен по CS-301 на 98%', time: '5 мин назад', type: 'success', icon: 'check' },
+  { id: '2', studentName: 'Sanjar Qodirov', action: 'Пропустил лекцию по CS-102', time: '15 мин назад', type: 'warning', icon: 'alert' },
+  { id: '3', studentName: 'Nilufar Rahimova', action: 'Завершил лабораторную работу', time: '32 мин назад', type: 'success', icon: 'check' },
+  { id: '4', studentName: 'Temur Boymatov', action: 'Низкая посещаемость (<60%)', time: '1 час назад', type: 'warning', icon: 'alert' },
+  { id: '5', studentName: 'Madina Usmonova', action: 'Получил грант за успеваемость', time: '2 часа назад', type: 'success', icon: 'star' },
+  { id: '6', studentName: 'Sardorbek Toshmatov', action: 'Зарегистрировался на курс CS-301', time: '3 часа назад', type: 'info', icon: 'info' },
+  { id: '7', studentName: 'Zarina Xolmatova', action: 'Сдал курсовую работу', time: '4 часа назад', type: 'success', icon: 'check' },
+  { id: '8', studentName: 'Yulduz Isoqova', action: 'Не сдал домашнее задание', time: '5 часов назад', type: 'warning', icon: 'alert' },
 ];
 
 // Guruhlar data for dropdown
@@ -191,18 +191,18 @@ export const guruhlarData: GroupItem[] = [
 // Group students data
 export const groupStudentsData: Record<string, GroupStudent[]> = {
   'CS-101': [
-    { id: '1', name: 'Alex Johnson', email: 'alex.j@edu.com', gpa: 3.95, attendance: 98, avgScore: 95 },
-    { id: '2', name: 'Sarah Williams', email: 'sarah.w@edu.com', gpa: 3.88, attendance: 95, avgScore: 92 },
-    { id: '3', name: 'Michael Brown', email: 'michael.b@edu.com', gpa: 3.82, attendance: 92, avgScore: 88 },
-    { id: '4', name: 'Emily Davis', email: 'emily.d@edu.com', gpa: 3.79, attendance: 97, avgScore: 90 },
-    { id: '5', name: 'David Wilson', email: 'david.w@edu.com', gpa: 3.75, attendance: 90, avgScore: 85 },
+    { id: '1', name: 'Abdulloh Karimov', email: 'abdulloh.k@edu.uz', gpa: 3.95, attendance: 98, avgScore: 95 },
+    { id: '2', name: 'Nilufar Rahimova', email: 'nilufar.r@edu.uz', gpa: 3.88, attendance: 95, avgScore: 92 },
+    { id: '3', name: 'Sardorbek Toshmatov', email: 'sardorbek.t@edu.uz', gpa: 3.82, attendance: 92, avgScore: 88 },
+    { id: '4', name: 'Madina Usmonova', email: 'madina.u@edu.uz', gpa: 3.79, attendance: 97, avgScore: 90 },
+    { id: '5', name: 'Jasurbek Aliyev', email: 'jasurbek.a@edu.uz', gpa: 3.75, attendance: 90, avgScore: 85 },
   ],
   'CS-102': [
-    { id: '6', name: 'Jessica Martinez', email: 'jessica.m@edu.com', gpa: 3.71, attendance: 94, avgScore: 89 },
-    { id: '7', name: 'James Anderson', email: 'james.a@edu.com', gpa: 3.68, attendance: 89, avgScore: 84 },
-    { id: '8', name: 'Jennifer Taylor', email: 'jennifer.t@edu.com', gpa: 3.65, attendance: 93, avgScore: 87 },
-    { id: '9', name: 'Robert Thomas', email: 'robert.t@edu.com', gpa: 3.62, attendance: 88, avgScore: 82 },
-    { id: '10', name: 'Lisa Garcia', email: 'lisa.g@edu.com', gpa: 3.58, attendance: 91, avgScore: 86 },
+    { id: '6', name: 'Gulnoza Azimova', email: 'gulnoza.a@edu.uz', gpa: 3.71, attendance: 94, avgScore: 89 },
+    { id: '7', name: 'Sherzod Ergashev', email: 'sherzod.e@edu.uz', gpa: 3.68, attendance: 89, avgScore: 84 },
+    { id: '8', name: 'Zarina Xolmatova', email: 'zarina.x@edu.uz', gpa: 3.65, attendance: 93, avgScore: 87 },
+    { id: '9', name: 'Bobur Mirzayev', email: 'bobur.m@edu.uz', gpa: 3.62, attendance: 88, avgScore: 82 },
+    { id: '10', name: 'Laylo Nematova', email: 'laylo.n@edu.uz', gpa: 3.58, attendance: 91, avgScore: 86 },
   ],
 };
 
@@ -210,8 +210,8 @@ export const groupStudentsData: Record<string, GroupStudent[]> = {
 export const studentDetailsData: Record<string, StudentDetail> = {
   '1': {
     id: '1',
-    name: 'Alex Johnson',
-    email: 'alex.j@edu.com',
+    name: 'Abdulloh Karimov',
+    email: 'abdulloh.k@edu.uz',
     phone: '+998 90 123 45 67',
     birthDate: '2005-03-15',
     address: 'Toshkent, Yunusobod tumani',
@@ -237,8 +237,8 @@ export const studentDetailsData: Record<string, StudentDetail> = {
   },
   '2': {
     id: '2',
-    name: 'Sarah Williams',
-    email: 'sarah.w@edu.com',
+    name: 'Nilufar Rahimova',
+    email: 'nilufar.r@edu.uz',
     phone: '+998 91 234 56 78',
     birthDate: '2005-07-22',
     address: 'Toshkent, Chilonzor tumani',
