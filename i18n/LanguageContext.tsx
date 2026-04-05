@@ -140,6 +140,158 @@ const translations: Translation = {
     ru: 'Кредиты',
   },
   
+  // Reports
+  'reports.title': {
+    uz: 'Hisobotlar',
+    ru: 'Отчёты',
+  },
+  'reports.subtitle': {
+    uz: 'Guruh va semestr boʻyicha hisobot',
+    ru: 'Отчёт по группе и семестру',
+  },
+  'reports.select_semester': {
+    uz: 'Semestrni tanlang',
+    ru: 'Выберите семестр',
+  },
+  'reports.select_group': {
+    uz: 'Guruhni tanlang',
+    ru: 'Выберите группу',
+  },
+  'reports.show_report': {
+    uz: "Hisobotni ko'rsatish",
+    ru: 'Показать отчёт',
+  },
+  'reports.semester': {
+    uz: 'Semestr',
+    ru: 'Семестр',
+  },
+  'reports.group': {
+    uz: 'Guruh',
+    ru: 'Группа',
+  },
+  'reports.students_count': {
+    uz: 'Talabalar soni',
+    ru: 'Количество студентов',
+  },
+  'reports.no_data': {
+    uz: "Hisobotni ko'rish uchun semestr va guruhni tanlang",
+    ru: 'Выберите семестр и группу для просмотра отчёта',
+  },
+  'reports.no_data_found': {
+    uz: 'Maʼlumot topilmadi',
+    ru: 'Данные не найдены',
+  },
+  
+  // Settings
+  'settings.title': {
+    uz: 'Sozlamalar',
+    ru: 'Настройки',
+  },
+  'settings.subtitle': {
+    uz: 'Hisobingiz sozlamalarini boshqaring',
+    ru: 'Управляйте настройками аккаунта',
+  },
+  'settings.profile': {
+    uz: 'Profil',
+    ru: 'Профиль',
+  },
+  'settings.profile_subtitle': {
+    uz: 'Shaxsiy maʼlumotlaringizni yangilang',
+    ru: 'Обновите личные данные',
+  },
+  'settings.notifications': {
+    uz: 'Bildirishnomalar',
+    ru: 'Уведомления',
+  },
+  'settings.notifications_subtitle': {
+    uz: 'Bildirishnoma sozlamalari',
+    ru: 'Настройки уведомлений',
+  },
+  'settings.email_notifications': {
+    uz: 'Email bildirishnomalar',
+    ru: 'Email уведомления',
+  },
+  'settings.push_notifications': {
+    uz: 'Push bildirishnomalar',
+    ru: 'Push уведомления',
+  },
+  'settings.report_notifications': {
+    uz: 'Hisobot boʻyicha bildirishnomalar',
+    ru: 'Уведомления по отчётам',
+  },
+  'settings.security': {
+    uz: 'Xavfsizlik',
+    ru: 'Безопасность',
+  },
+  'settings.security_subtitle': {
+    uz: 'Parolni oʻzgartirish va xavfsizlik sozlamalari',
+    ru: 'Изменение пароля и настройки безопасности',
+  },
+  'settings.current_password': {
+    uz: 'Joriy parol',
+    ru: 'Текущий пароль',
+  },
+  'settings.new_password': {
+    uz: 'Yangi parol',
+    ru: 'Новый пароль',
+  },
+  'settings.confirm_password': {
+    uz: 'Parolni tasdiqlang',
+    ru: 'Подтвердите пароль',
+  },
+  'settings.change_password': {
+    uz: 'Parolni oʻzgartirish',
+    ru: 'Изменить пароль',
+  },
+  'settings.two_factor': {
+    uz: 'Ikki bosqichli autentifikatsiya',
+    ru: 'Двухфакторная аутентификация',
+  },
+  'settings.appearance': {
+    uz: 'Koʻrinish',
+    ru: 'Внешний вид',
+  },
+  'settings.appearance_subtitle': {
+    uz: 'Mavzu va til sozlamalari',
+    ru: 'Настройки темы и языка',
+  },
+  'settings.theme': {
+    uz: 'Mavzu',
+    ru: 'Тема',
+  },
+  'settings.light': {
+    uz: 'Yorugʻ',
+    ru: 'Светлая',
+  },
+  'settings.dark': {
+    uz: 'Qorongʻi',
+    ru: 'Тёмная',
+  },
+  'settings.language': {
+    uz: 'Til',
+    ru: 'Язык',
+  },
+  'settings.about': {
+    uz: 'Ilova haqida',
+    ru: 'О приложении',
+  },
+  'settings.about_subtitle': {
+    uz: 'Ilova versiyasi va maʼlumotlari',
+    ru: 'Версия и информация о приложении',
+  },
+  'settings.version': {
+    uz: 'Versiya',
+    ru: 'Версия',
+  },
+  'settings.save': {
+    uz: 'Saqlash',
+    ru: 'Сохранить',
+  },
+  'settings.saved_success': {
+    uz: "Muvaffaqiyatli saqlandi!",
+    ru: 'Успешно сохранено!',
+  },
+  
   // Dashboard
   'dashboard.title': {
     uz: 'Boshqaruv paneli',

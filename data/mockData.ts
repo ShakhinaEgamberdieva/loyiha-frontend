@@ -46,6 +46,25 @@ export interface StudentDetail {
   gpaTrend: { month: string; gpa: number }[];
 }
 
+export interface SemesterOption {
+  id: string;
+  label: string;
+  year: string;
+  type: 'bahorgi' | 'kuzgi';
+}
+
+export interface SemesterReport {
+  groupId: string;
+  groupName: string;
+  semesterId: string;
+  students: number;
+  avgScore: number;
+  avgAttendance: number;
+  avgGPA: number;
+  gradeDistribution: { grade: string; count: number; color: string }[];
+  studentsList: GroupStudent[];
+}
+
 export interface Student {
   id: string;
   name: string;
@@ -278,3 +297,111 @@ const firstHalfAvg = groupsData.slice(0, 6).reduce((sum, g) => sum + g.avgScore,
 const secondHalfAvg = groupsData.slice(6).reduce((sum, g) => sum + g.avgScore, 0) / 6;
 export const scoreTrend: 'up' | 'down' = secondHalfAvg >= firstHalfAvg ? 'up' : 'down';
 export const scoreTrendValue = Math.abs(secondHalfAvg - firstHalfAvg).toFixed(1);
+
+// Semesters options
+export const semestersOptions: SemesterOption[] = [
+  { id: '2023-bahorgi', label: '2023/2024 Bahorgi Semestr', year: '2023/2024', type: 'bahorgi' },
+  { id: '2023-kuzgi', label: '2023/2024 Kuzgi Semestr', year: '2023/2024', type: 'kuzgi' },
+  { id: '2024-bahorgi', label: '2024/2025 Bahorgi Semestr', year: '2024/2025', type: 'bahorgi' },
+  { id: '2024-kuzgi', label: '2024/2025 Kuzgi Semestr', year: '2024/2025', type: 'kuzgi' },
+];
+
+// Mock data for reports by semester and group
+export const semesterReportsData: Record<string, SemesterReport> = {
+  'CS-101-2023-bahorgi': {
+    groupId: '1', groupName: 'CS-101', semesterId: '2023-bahorgi',
+    students: 22, avgScore: 78.5, avgAttendance: 88, avgGPA: 3.32,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 6, color: '#10b981' },
+      { grade: 'B (80-89)', count: 8, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 5, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 2, color: '#f97316' },
+      { grade: 'F (<60)', count: 1, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-101'].map(s => ({ ...s, gpa: s.gpa - 0.1, attendance: s.attendance - 3, avgScore: s.avgScore - 5 })).slice(0, 4),
+  },
+  'CS-101-2023-kuzgi': {
+    groupId: '1', groupName: 'CS-101', semesterId: '2023-kuzgi',
+    students: 24, avgScore: 81.2, avgAttendance: 90, avgGPA: 3.38,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 7, color: '#10b981' },
+      { grade: 'B (80-89)', count: 9, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 5, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 2, color: '#f97316' },
+      { grade: 'F (<60)', count: 1, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-101'].map(s => ({ ...s, gpa: s.gpa - 0.05, attendance: s.attendance - 1, avgScore: s.avgScore - 2 })).slice(0, 4),
+  },
+  'CS-101-2024-bahorgi': {
+    groupId: '1', groupName: 'CS-101', semesterId: '2024-bahorgi',
+    students: 24, avgScore: 83.8, avgAttendance: 92, avgGPA: 3.42,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 8, color: '#10b981' },
+      { grade: 'B (80-89)', count: 9, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 4, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 2, color: '#f97316' },
+      { grade: 'F (<60)', count: 1, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-101'].slice(0, 5),
+  },
+  'CS-101-2024-kuzgi': {
+    groupId: '1', groupName: 'CS-101', semesterId: '2024-kuzgi',
+    students: 24, avgScore: 82.5, avgAttendance: 91, avgGPA: 3.45,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 8, color: '#10b981' },
+      { grade: 'B (80-89)', count: 8, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 5, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 2, color: '#f97316' },
+      { grade: 'F (<60)', count: 1, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-101'].slice(0, 5),
+  },
+  'CS-102-2023-bahorgi': {
+    groupId: '2', groupName: 'CS-102', semesterId: '2023-bahorgi',
+    students: 26, avgScore: 74.2, avgAttendance: 85, avgGPA: 3.08,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 5, color: '#10b981' },
+      { grade: 'B (80-89)', count: 7, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 8, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 4, color: '#f97316' },
+      { grade: 'F (<60)', count: 2, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-102'].map(s => ({ ...s, gpa: s.gpa - 0.15, attendance: s.attendance - 5, avgScore: s.avgScore - 8 })).slice(0, 4),
+  },
+  'CS-102-2023-kuzgi': {
+    groupId: '2', groupName: 'CS-102', semesterId: '2023-kuzgi',
+    students: 27, avgScore: 76.8, avgAttendance: 86, avgGPA: 3.15,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 6, color: '#10b981' },
+      { grade: 'B (80-89)', count: 8, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 7, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 4, color: '#f97316' },
+      { grade: 'F (<60)', count: 2, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-102'].map(s => ({ ...s, gpa: s.gpa - 0.08, attendance: s.attendance - 2, avgScore: s.avgScore - 4 })).slice(0, 4),
+  },
+  'CS-102-2024-bahorgi': {
+    groupId: '2', groupName: 'CS-102', semesterId: '2024-bahorgi',
+    students: 28, avgScore: 79.5, avgAttendance: 89, avgGPA: 3.25,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 7, color: '#10b981' },
+      { grade: 'B (80-89)', count: 10, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 7, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 3, color: '#f97316' },
+      { grade: 'F (<60)', count: 1, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-102'].slice(0, 5),
+  },
+  'CS-102-2024-kuzgi': {
+    groupId: '2', groupName: 'CS-102', semesterId: '2024-kuzgi',
+    students: 28, avgScore: 78.3, avgAttendance: 88, avgGPA: 3.21,
+    gradeDistribution: [
+      { grade: 'A (90-100)', count: 6, color: '#10b981' },
+      { grade: 'B (80-89)', count: 9, color: '#3b82f6' },
+      { grade: 'C (70-79)', count: 8, color: '#f59e0b' },
+      { grade: 'D (60-69)', count: 3, color: '#f97316' },
+      { grade: 'F (<60)', count: 2, color: '#ef4444' },
+    ],
+    studentsList: groupStudentsData['CS-102'].slice(0, 5),
+  },
+};

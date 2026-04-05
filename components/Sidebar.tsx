@@ -149,15 +149,15 @@ export default function Sidebar() {
 
           {/* Settings */}
           <Link
-            href="#"
+            href="/settings"
             className={`flex items-center gap-4 px-4 py-3.5 rounded-2xl transition-all font-bold group relative ${
-              pathname === "#"
+              pathname === "/settings"
                 ? "bg-orange-500 text-white shadow-lg shadow-orange-500/25"
                 : "text-slate-500 hover:bg-orange-50 hover:text-orange-600"
             }`}
             title={!isOpen ? t('sidebar.settings') : undefined}
           >
-            <Settings className={`w-6 h-6 shrink-0 ${pathname === "#" ? "text-white" : "group-hover:scale-110 transition-transform"}`} />
+            <Settings className={`w-6 h-6 shrink-0 ${pathname === "/settings" ? "text-white" : "group-hover:scale-110 transition-transform"}`} />
             <span
               className={`whitespace-nowrap transition-all duration-300 overflow-hidden ${
                 isOpen ? "max-w-[200px] opacity-100" : "max-w-0 opacity-0"
